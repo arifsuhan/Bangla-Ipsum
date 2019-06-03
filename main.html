@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Bangla Faker</title>
+	<link rel="stylesheet" type="text/css" href="lib/style.css">
+</head>
+
+
+<body>
+
+	<h1>Bangla Faker</h1>
+
+	<form id="test">
+		<input type="radio" name="genR" value="0" checked="checked"> Sentence
+		<br>
+		<input type="radio" name="genR" value="1"> Paragraph 
+		<br>
+		<input type="radio" name="genR" value="2"> List 
+		<br>
+	</form>
+
+	<input type="text" id="amount" value="2">
+	<button type="submit" onclick="menu()">Submit</button>
+
+
+	<div>
+		<h2>Generated Text</h2>
+		<div id="mainText"></div>
+	</div>
+
+</body>
+
+<script src="data/bn_letters.json"></script>
+<script src="data/bn_pos.json"></script>
+<script src="data/bn_stopwords.json"></script>
+
+<script src="lib/main.js"></script>
+
+</html>
+
+
+
